@@ -12,24 +12,24 @@ public class TestaContato {
         Contato cB = new Contato(null,"3333-3333",null);
 		System.out.println("vetor vazio: " + vetor);
         vetor.adiciona(c1);
-        System.out.println("Adicionei 1Âº contato");
+        System.out.println("Adicionei 1º contato");
         System.out.println("Capacidade: " + vetor.capacidade());
         System.out.println(vetor);
         System.out.println("Tamanho atual: "+ vetor.tamanho());
         vetor.adiciona(c2);
-        System.out.println("Adicionei 2Âº contato");
+        System.out.println("Adicionei 2º contato");
         System.out.println("Capacidade: " + vetor.capacidade());
         System.out.println(vetor);
         System.out.println("Tamanho atual: "+ vetor.tamanho());
         vetor.adiciona(c3);
-        System.out.println("Adicionei 3Âº contato");
+        System.out.println("Adicionei 3° contato");
         System.out.println("Capacidade: " + vetor.capacidade());
         System.out.println(vetor);
         System.out.println("Tamanho atual: "+ vetor.tamanho());
         System.out.println("Buscar contato na posicao 1");
         System.out.println(vetor.busca(1));
         System.out.println("Verificar se existe Contato 3");
-        System.out.println("PosicÃƒÂ£o: " + vetor.busca(c1));
+        System.out.println("Posicao: " + vetor.busca(c1));
 
         System.out.println("Verificar se existe Contato B");
         System.out.println("Posicao: " + vetor.busca(cB));
