@@ -22,7 +22,7 @@ public class VetorObjetos {
 	
 	public boolean adiciona(int posicao, Object elemento){	
 		if (!(posicao >= 0 && posicao < tamanho)){
-			throw new IllegalArgumentException("PosiÃƒÂ§ÃƒÂ£o invÃƒÂ¡lida");
+			throw new IllegalArgumentException("Posicao invalida");
 		}
 		this.aumentaCapacidade();
 		//mover todos os elementos
@@ -46,7 +46,7 @@ public class VetorObjetos {
 	
 	public Object busca(int posicao){
 		if (!(posicao >= 0 && posicao < tamanho)){
-			throw new IllegalArgumentException("PosiÃƒÂ§ÃƒÂ£o invÃƒÂ¡lida");
+			throw new IllegalArgumentException("Posicao invalida");
 		} 
 		return this.elementos[posicao];
 	}
@@ -62,7 +62,7 @@ public class VetorObjetos {
 	
 	public void remove(int posicao){
 		if (!(posicao >= 0 && posicao < tamanho)){
-			throw new IllegalArgumentException("PosiÃƒÂ§ÃƒÂ£o invÃƒÂ¡lida");
+			throw new IllegalArgumentException("Posicao invalida");
 		}
 		for (int i=posicao; i<this.tamanho-1; i++){
 			this.elementos[i] = this.elementos[i+1];
@@ -97,7 +97,7 @@ public class VetorObjetos {
     public void ordena() {
     for (int i = 0; i < this.tamanho - 1; i++) {  // Passagens
         boolean trocou = false;
-        for (int j = 0; j < this.tamanho - 1 - i; j++) {  // ComparaÃ§Ãµes
+        for (int j = 0; j < this.tamanho - 1 - i; j++) {  // Comparacoes
             if (this.elementos[j] instanceof Comparable && this.elementos[j + 1] instanceof Comparable) {
                 Comparable obj1 = (Comparable) this.elementos[j];
                 Comparable obj2 = (Comparable) this.elementos[j + 1];
@@ -109,10 +109,10 @@ public class VetorObjetos {
                     trocou = true;
                 }
             } else {
-                throw new IllegalArgumentException("Elementos nÃ£o comparÃ¡veis.");
+                throw new IllegalArgumentException("Elementos nao comparaveis.");
             }
         }
-        // Se nÃ£o houve trocas, o vetor jÃ¡ estÃ¡ ordenado
+        // Se nao houve trocas, o vetor ja¡ esta¡ ordenado
         if (!trocou) {
             break;
         }

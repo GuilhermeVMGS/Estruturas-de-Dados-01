@@ -37,7 +37,7 @@ public class Contato implements Comparable<Contato> {
         return " [Nome: " + getNome() + ", Telefone: " + getTelefone() + ", e-mail: " + getEmail() + "]";
     }  
 
-     // MÃ©todo equals sobrecarregado para comparar por tipo (nome, email ou telefone)
+     // Metodo equals sobrecarregado para comparar por tipo (nome, email ou telefone)
      @Override
      public boolean equals(Object obj) {
          if (this == obj) {
@@ -48,14 +48,14 @@ public class Contato implements Comparable<Contato> {
          }
          Contato outro = (Contato) obj;
  
-         // Aqui vocÃª pode alterar a lÃ³gica para definir qual critÃ©rio deseja usar na comparaÃ§Ã£o
+         // Aqui voce pode alterar a logica para definir qual criterio deseja usar na comparacao
          // Exemplo: comparar pelo nome
          return this.nome.equalsIgnoreCase(outro.getNome()) ||
                 this.email.equalsIgnoreCase(outro.getEmail()) ||
                 this.telefone.equals(outro.getTelefone());
      }
 
-    // ImplementaÃ§Ã£o da interface Comparable, comparando o nome dos contatos
+    // Implementaçao da interface Comparable, comparando o nome dos contatos
     @Override
     public int compareTo(Contato outro) {
         return this.nome.compareToIgnoreCase(outro.getNome());  // Ordena por nome de forma case-insensitive
