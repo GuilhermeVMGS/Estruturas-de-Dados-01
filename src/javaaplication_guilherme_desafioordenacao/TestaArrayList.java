@@ -7,7 +7,6 @@ public class TestaArrayList {
     public static void main(String[] args) {
         // 1. Criação da lista e adicao de elementos
         ArrayList<Contato> lista = new ArrayList<>();
-//        System.out.println("aaaaaaaaaaaaaaaaaa");
         lista.add(new Contato("Contato 1", "1111-1111", "contato1@email.com"));
         lista.add(new Contato("Contato 2", "2222-2222", "contato2@email.com"));
         lista.add(new Contato("Contato 3", "3333-3333", "contato3@email.com"));
