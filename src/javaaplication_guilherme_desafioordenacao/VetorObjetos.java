@@ -93,7 +93,7 @@ public class VetorObjetos {
 		return this.elementos.length;
 	}   
 
-	// MÃ©todo Bubble Sort para ordenar os elementos
+	// Metodo Bubble Sort para ordenar os elementos
     public void ordena() {
     for (int i = 0; i < this.tamanho - 1; i++) {  // Passagens
         boolean trocou = false;
@@ -112,7 +112,7 @@ public class VetorObjetos {
                 throw new IllegalArgumentException("Elementos nao comparaveis.");
             }
         }
-        // Se nao houve trocas, o vetor ja¡ esta¡ ordenado
+        // Se nao houve trocas, o vetor ja esta ordenado
         if (!trocou) {
             break;
         }
